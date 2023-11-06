@@ -22,6 +22,8 @@ The challenge in reducing the false negative rate (individuals wrongly classifie
 
 A important information from our analysis is the indicative that the features **BMI**, **GenHlth**, **Age**, **HighBP**, and **HighChol** are the most predictive risk factors for diabetes, consistent with established clinical insights. Our project successfully reduce the feature space from 22 possible risk factors to just a subset of five, facilitating a simplified predictive model without compromising accuracy. 
 
+The Random Forest model, utilizing these five risk factors, proved to be the most balanced in terms of complexity and predictive capacity, and was selected for the final model deployment.
+
 The **Random Forest model**, utilizing just these five risk factors, show to be the most balanced option in terms of complexity and predictive capacity, and was selected for the final model deployment.
 
 
