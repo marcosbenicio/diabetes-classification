@@ -113,11 +113,11 @@ requests.post(url_local, json = diabetes_indicators).json()
 
 2. To list all the Docker images on your system and verify that the image is there, use:
 
-     sudo docker images
+        sudo docker images
 
 3. After the image is built or pushed, run a container from it with the following command:
 
-     sudo docker run -p 9696:9696 diabetes_prediction
+        sudo docker run -p 9696:9696 diabetes_prediction
 
     With the Flask application running inside Docker, we can make HTTP requests to port 9696. For example, in the Jupyter notebook located in `notebooks/diabetes-indicators.ipynb`, run the following code cell at the section 5.2: 
 
