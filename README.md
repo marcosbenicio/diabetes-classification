@@ -1,10 +1,31 @@
-# Diabetes Classification Project
+# **Diabetes Classification Project**
 
 ## Project Description
 
+Diabetes is among the most prevalent chronic diseases in the United States, impacting millions of Americans each year. Diabetes is a chronic disease in which individuals lose the ability to effectively regulate levels of glucose in the blood, and can lead to reduced quality of life and life expectancy.
+
+This project uses the Diabetes Health Indicators dataset, available on [kaggle](https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset/discussion). For detailed dataset insights, go to the `references/diabetes-indicator-dictionary.md` in the project folder.
+
+The project seeks answer the following questions:
+
+1. Which risk factors most strongly predict diabetes?
+
+2. Can a subset of the risk factors to accurately predict whether an individual has diabetes?
+   
+## Conclusions
+
+From the exploratory data analysis (EDA), we identified the possibility of dropping some redundant features from the dataset out of the initial 22, leading to two subsets: the 'small feature set' (with features agreed upon by all correlation metrics) and the 'large feature set' (a union of features selected by both Mutual Information and Pearson Correlation).
+
+In the Model Training and Validation section we showed that both feature sets produced similar outcomes across Logistic Regression, Decision Tree, and Random Forest models, with only slight variances in accuracy and other metrics such as F1 Score, Precision, Recall, and AUC. The Features selected by the models shows to be a even smaller set of feature, with only five features, that demonstrates also a high predictive power with only a marginal difference from the other features set.
+
+The challenge in reducing the false negative rate (individuals wrongly classified with diabetes) from the different models may be due the possible class imbalances of the features **CholCHeck**, **Stroke**, **HeartDiseaseorAttack**, **Vaggies**, **HvyAlcoholConsump**,  **AnyHealthcare**, **NoDocbcCost**, as noted previously in the EDA. One idea for improvement for the dataset in a future work may be focus on adding another tables from [Kaggle](https://www.kaggle.com/datasets/alexteboul/diabetes-health-indicators-dataset?select=diabetes_012_health_indicators_BRFSS2015.csv) that can be used complementary to the one used here. 
+
+A important information from our analysis is the indicative that the features **BMI**, **GenHlth**, **Age**, **HighBP**, and **HighChol** are the most predictive risk factors for diabetes, consistent with established clinical insights. Our project successfully reduce the feature space from 22 possible risk factors to just a subset of five, facilitating a simplified predictive model without compromising accuracy. 
+
+The **Random Forest model**, utilizing just these five risk factors, show to be the most balanced option in terms of complexity and predictive capacity, and was selected for the final model deployment.
 
 
-# Project Setup
+# **Project Setup**
 
 
 ## Cloning the Repository
@@ -62,7 +83,7 @@ To run the Jupyter notebooks in this project or a web service, is required to se
     
 And it will be started the Jupyter Notebook in the virtual environment context on the browser. Just go to the `notebooks/diabetes-indicators.ipynb` and run.
 
-# Web Service Deployment
+# **Web Service Deployment**
 
 ## Virtual Environment Setup
 
