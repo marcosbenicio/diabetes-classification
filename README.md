@@ -1,5 +1,9 @@
 # **Diabetes Classification Project**
 
+<center><img src = "reports/figures/readme-image.png" width="970" height="270"/></center>
+
+
+
 ## Project Description
 
 Diabetes is among the most prevalent chronic diseases in the United States, impacting millions of Americans each year. Diabetes is a chronic disease in which individuals lose the ability to effectively regulate levels of glucose in the blood, and can lead to reduced quality of life and life expectancy.
