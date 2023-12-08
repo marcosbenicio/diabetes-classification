@@ -1,3 +1,15 @@
+# **Outline**
+- [Diabetes Classification Project](#diabetes-classification-project)
+    - [Project Description](#project-description)
+    - [Conclusions](#conclusions)
+- [Project Setup](#project-setup)
+    - [Cloning the Repository](#cloning-the-repository)
+    - [Virtual Environment and Dependencies](#virtual-environment-and-dependencies)
+- [Web Service Deployment](#web-service-deployment)
+    - [Virtual Environment Setup](#virtual-environment-setup)
+    - [Docker Deployment](#docker-deployment)
+    - [Cloud Deployment](#cloud-deployment)
+
 # **Diabetes Classification Project**
 
 <center><img src = "reports/figures/readme-image.png" width="970" height="270"/></center>
@@ -131,7 +143,7 @@ requests.post(url_local, json = diabetes_indicators).json()
     requests.post(url_local, json = diabetes_indicators).json()
     ```
 
-### Cloud Deployment
+## Cloud Deployment
 
 The model was deployed to the cloud using Render, to interact with it via HTTP requests. Go to the jupyter notebook located in `notebooks/diabetes-indicators.ipynb`, run the following code cell at the section 5.2: 
 
